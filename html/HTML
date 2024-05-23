@@ -1,0 +1,112 @@
+
+HTML
+(*) Why is HTML called a markup language?
+	Markup' means the way you can structure or format content. HTML is called a
+	'markup language' because it allows users to organise the appearance and
+	presentation of all the content that should go on a web page. It tells the web
+	browser how to display the page's words and images to the user.
+
+(*) inline elements & blockline elements
+
+     inline elements
+     ---------------
+     An inline element does not start on a new line.
+     An inline element only takes up as much width as necessary.
+
+    <input><button><br>
+
+    blockline elements
+    ------------------
+    Always starts on a new line, and the browsers automatically add       
+    some space (a margin) before and after the element.
+    A block-level element always takes up the full width available (stretches out to the    
+    left and right as far as it can). 
+
+   eg:- <div><header><footer>
+(*)<iframe>
+	 <iframe src="Cars.html" width="300" height="500"></iframe>
+	the tag specifies an inline frame
+	An inline frame is used to embed another document within the current HTML document.
+(*) audio & video
+	<video width="300" height="300" controls>
+	<source src="new.mp4" type="video/mp4">
+	</video>
+
+	<audio controls>
+	<source src="song.mp3" type="audio/mp3">
+	</audio>
+
+(*) <mark>
+    The <mark> tag defines text that should be marked or highlighted.
+
+(*) <sup>
+    Use the <sup> tag to define superscripted text
+(*) <sub>
+    <p>This text contains <sub>subscript</sub> text.</p>
+(*) full forms of tags
+	<ul> = The tag defines an unordered (bulleted) list.
+	<ol> = The tag defines an ordered list.it can be numerical or alphabetical. 
+	<li> = The tag defines a list item
+(*) Attributes
+	An HTML attribute is a piece of markup language used to adjust the behavior or
+	display of an HTML element. For example, attributes can be used to change the
+	color, size, or functionality of HTML elements.
+
+	<tag_name attribute_name="value">Content</tag_name>
+	<h1 align="center">First html</h1>
+	(left,center or right)
+(*) forms
+	The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+
+	(*) <form enctype="multipart/form-data">
+		enctype = The  enctype Attribute is used to specify that data that will be present in form should be encoded when submitting to the server. This type of attribute can be used only if method = “POST”. 
+	
+		multipart.form-data = The ENCTYPE attribute   two ways of encoding the HTML form. It is specifically used when file uploading is required in HTML form. It sends the form data to server in multiple parts because of large size of file.
+	(*)
+	 <radio> button
+	 checkbox
+	 <option> tag
+	<time>
+	<date>
+	<file>
+	<number>
+(*)  entities 	(&copy;&trade;&iquest;&nbsp;)
+	An HTML entity is a piece of textthat begins with an ampersand (&) and ends with a semicolon (;). HTML entities are frequently used to display reserved characters
+
+(*) <a href="first.html" target="_blank">click</a>
+	<a>="anchor tag",
+	 href="hypertext Referance" 
+	target="The target attribute specifies where to open the linked document" )
+		_blank: It opens the link in a new window.
+		_self: It is the default value. It opens the linked document in the same frame.
+		_parent: It opens the linked document in the parent frameset.
+		_top: It opens the linked document in the full body of the window.
+		framename: It opens the linked document in the named frame.
+
+(*) <marquee>
+	<marquee direction="right" scrollamount="5" height="100"   loop="3" hspace="75" vspace="75">hello world</marquee>
+	scrollamount = increase speed
+	scrolldelay = delay the time
+	loop =  the number of times the marquee should loop. 
+
+	The <marquee> tag in HTML is used to create a scrolling piece of text or an image.
+		
+(*)
+
+
+
+
+		contents
+		.........
+		(*) Why is HTML called a markup language?
+		(*) inline elements & blockline elements
+		(*)<iframe>
+		(*) audio & video
+		(*) <mark></mark>,<sup></sup>,<sub></sub>
+		(*) Attributes
+		(*) forms->enctype=multipart/form-data
+		(*)  entities 
+		(*) <a href="first.html" target="_blank">click</a>
+		(*) <marquee direction="right" scrollamount="5" height="100"   loop="3" hspace="75" vspace="75">hello world</marquee>
+
+		

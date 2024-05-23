@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      /* Header */
+      .header {
+        width: 100%;
+        height: 80px;
+        background-color: rgb(247, 243, 243);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        font-weight: lighter;
+      }
+      .header-left {
+        display: flex;
+        /* justify-content: space-between; */
+        width: 30%;
+        padding-left: 50px;
+      }
+      .logo img {
+        height: 50px;
+        width: 80px;
+      }
+      .other {
+        padding-left: 30px;
+        padding-top: 20px;
+        text-decoration: underline;
+      }
+      .header-right {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        padding: 20px;
+      }
+      /* foods */
+      .main {
+        width: 100%;
+        /* height: 600px; */
+      }
+      .foods {
+        width: 70%;
+
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 30px;
+      }
+      .dishes {
+        display: flex;
+        justify-content: space-between;
+      }
+      .dishes img {
+        height: 200px;
+      }
+      .foods h2 {
+        padding: 15px;
+      }
+      /* Cards */
+      .cards {
+        display: flex;
+        justify-content: space-between;
+      }
+      .card {
+        height: 300px;
+        width: 260px;
+        /* background-color: rgb(67, 52, 164); */
+      }
+      .card1 img,
+      .card2 img,
+      .card3 img {
+        width: 260px;
+        height: 200px;
+        border-radius: 25px;
+      }
+      .card-second,
+      .card-third {
+        padding: 5px;
+      }
+      /* icons */
+      .icon {
+        height: 30px;
+        /* width: 90px; */
+        border: 1px solid black;
+        /* background-color: red; */
+        border-radius: 10px;
+        margin-right: 5px;
+      }
+      .icon p {
+        text-align: center;
+        padding: 5px;
+      }
+      .icons {
+        margin: 10px 10px 10px 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      /* Restaurent */
+      .resturents {
+        /* background-color: bisque; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .container {
+        /* background-color: aquamarine; */
+        height: 250px;
+        width: 200px;
+        padding: 10px;
+      }
+      .container:hover,
+      .container img:hover {
+        font-size: 80%;
+        height: 110px;
+        width: 190px;
+      }
+      .container img {
+        height: 120px;
+        width: 200px;
+        border-radius: 15px;
+        /* background-color: red; */
+      }
+      .obj {
+        object-fit: cover;
+      }
+      /* footer2 */
+      .footer2{
+        display: flex;
+        /* justify-content: space-around; */
+        background-color:aliceblue;
+        padding-left: 100px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        /* padding-right: 50px; */
+      }
+      .footer2 img{
+        height: 60px;
+        width: 150px;
+      }
+      .playStore{
+        padding-right: 50px;
+        padding-left: 350px;
+      }
+      .content{
+        font-size: 30px;
+        font-family:sans-serif;
+        /* text-shadow:2px 3px 6px; */
+        color: rgba(2, 6, 12, 0.75);;
+        font-weight: bolder;
+      }
+      /* Footer */
+      .footer {
+        width: 100%;
+        background-color: black;
+        color: azure;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+      }
+      .footer a {
+        text-decoration: none;
+        color: azure;
+      }
+      .footer p,
+      .footer h2 {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <div class="logo"><img src="./Swiggy.png" alt="" /></div>
+        <div class="other">Other</div>
+      </div>
+      <div class="header-right">
+        <div>Swiggy Corporate</div>
+        <div>Search</div>
+        <div>Offers</div>
+        <div>Help</div>
+        <div>Sign in</div>
+        <div>Cart</div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="foods">
+        <h2>Whats on your mind</h2>
+        <div class="dishes">
+          <img src="./Biryani.avif" alt="" />
+          <img src="./Burger.avif" alt="" />
+          <img src="./pothichoru.avif" alt="" />
+          <img src="./Shakes.avif" alt="" />
+          <img src="./south.avif" alt="" />
+        </div>
+        <!-- <div>
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            </div> -->
+        <h2>Top restaurant chains in Thiruvananthapuram</h2>
+        <div class="cards">
+          <div>
+            <div class="card1">
+              <img src="./pizza.avif" alt="" class="image1" />
+              <!-- <h2>50% OFF UPTO 100</h2> -->
+            </div>
+            <div class="card-second">
+              <h3>Pizza Hut</h3>
+              <h4>*4.2 . 20-25 mins</h4>
+            </div>
+            <div class="card-third">
+              <p>Pizzas</p>
+              <p>Palayam</p>
+            </div>
+          </div>
+          <div>
+            <div class="card2">
+              <img src="./dine.avif" alt="dine" />
+            </div>
+            <div class="card-second">
+              <h3>Dine @Kumars</h3>
+              <h4>*4.2 . 20-25 mins</h4>
+            </div>
+            <div class="card-third">
+              <p>Dessrt chineese north indian</p>
+              <p>Thampanoor</p>
+            </div>
+          </div>
+          <div>
+            <div class="card3">
+              <img src="./dosha.avif" alt="" />
+            </div>
+            <div class="card-second">
+              <h3>Hotel Aryas Park</h3>
+              <h4>*4.2 . 20-25 mins</h4>
+            </div>
+            <div class="card-third">
+              <p>South indian biriyani,chineese</p>
+              <p>killippalam</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>Restaurants with online food delivery in Thiruvananthapuram</h2>
+        </div>
+        <div class="icons">
+          <div class="icon"><p>Filter</p></div>
+          <div class="icon"><p>Sort By</p></div>
+          <div class="icon"><p>Fast Delivery</p></div>
+          <div class="icon"><p>New on Swiggy</p></div>
+          <div class="icon"><p>Rating 4.0+</p></div>
+          <div class="icon"><p>Pre Veg</p></div>
+          <div class="icon"><p>Rs 300-Rs 600</p></div>
+          <div class="icon"><p>Less than Rs.300</p></div>
+        </div>
+        <div class="resturents">
+          <div class="container">
+            <img src="./dine.avif" alt="" class="obj" />
+            <div>
+              <h3>Dine @ Kumars</h3>
+              <h3>4.5 • 25-30 mins</h3>
+            </div>
+            <div style="padding-top: 5px">
+              South Indian, Biryani, Chinese Killippalam
+            </div>
+          </div>
+          <div class="container">
+            <img src="./food3.avif" alt="" class="obj" />
+            <div>
+              <h3>Dine @ Kumars</h3>
+              <h3>4.5 • 25-30 mins</h3>
+            </div>
+            <div style="padding-top: 5px">
+              South Indian, Biryani, Chinese Killippalam
+            </div>
+          </div>
+          <div class="container">
+            <img src="./dine.avif" alt="" class="obj" />
+            <div>
+              <h3>Dine @ Kumars</h3>
+              <h3>4.5 • 25-30 mins</h3>
+            </div>
+            <div style="padding-top: 5px">
+              South Indian, Biryani, Chinese Killippalam
+            </div>
+          </div>
+          <div class="container">
+            <img src="./food1.avif" alt="" class="obj" />
+            <div>
+              <h3>Dine @ Kumars</h3>
+              <h3>4.5 • 25-30 mins</h3>
+            </div>
+            <div style="padding-top: 5px">
+              South Indian, Biryani, Chinese Killippalam
+            </div>
+          </div>
+          <div class="container">
+            <img src="./dine.avif" alt="" class="obj" />
+            <div>
+              <h3>Dine @ Kumars</h3>
+              <h3>4.5 • 25-30 mins</h3>
+            </div>
+            <div style="padding-top: 5px">
+              South Indian, Biryani, Chinese Killippalam
+            </div>
+          </div>
+          <div class="container">
+            <img src="./food3.avif" alt="" class="obj" />
+            <div>
+              <h3>Dine @ Kumars</h3>
+              <h3>4.5 • 25-30 mins</h3>
+            </div>
+            <div style="padding-top: 5px">
+              South Indian, Biryani, Chinese Killippalam
+            </div>
+          </div>
+          <div class="container">
+            <img src="./food1.avif" alt="" class="obj" />
+            <div>
+              <h3>Dine @ Kumars</h3>
+              <h3>4.5 • 25-30 mins</h3>
+            </div>
+            <div style="padding-top: 5px">
+              South Indian, Biryani, Chinese Killippalam
+            </div>
+          </div>
+          <div class="container">
+            <img src="./food2.avif" alt="" class="obj" />
+            <div>
+              <h3>Dine @ Kumars</h3>
+              <h3>4.5 • 25-30 mins</h3>
+            </div>
+            <div style="padding-top: 5px">
+              South Indian, Biryani, Chinese Killippalam
+            </div>
+          </div>
+          <div class="container">
+            <img src="./pizza.avif" alt="" class="obj" />
+            <div>
+              <h3>Dine @ Kumars</h3>
+              <h3>4.5 • 25-30 mins</h3>
+            </div>
+            <div style="padding-top: 5px">
+              South Indian, Biryani, Chinese Killippalam
+            </div>
+          </div>
+          <div class="container">
+            <img src="./food2.avif" alt="" class="obj" />
+            <div>
+              <h3>Dine @ Kumars</h3>
+              <h3>4.5 • 25-30 mins</h3>
+            </div>
+            <div style="padding-top: 5px">
+              South Indian, Biryani, Chinese Killippalam
+            </div>
+          </div>
+          <div class="container">
+            <img src="./food1.avif" alt="" class="obj" />
+            <div>
+              <h3>Dine @ Kumars</h3>
+              <h3>4.5 • 25-30 mins</h3>
+            </div>
+            <div style="padding-top: 5px">
+              South Indian, Biryani, Chinese Killippalam
+            </div>
+          </div>
+          <div class="container">
+            <img src="./pizza.avif" alt="" class="obj" />
+            <div>
+              <h3>Dine @ Kumars</h3>
+              <h3>4.5 • 25-30 mins</h3>
+            </div>
+            <div style="padding-top: 5px">
+              South Indian, Biryani, Chinese Killippalam
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer2">
+        <div class="content"><p>For better experience,download <br> the Swiggy app now</p></div>
+        <div class="playStore"><img src="./playStore.avif" alt="" /></div>
+        <div class="appStore"><img src="./appStore.avif" alt="" /></div>
+      </div>
+      <div class="footer">
+        <div>
+          <h2>Swiggy</h2>
+          <p>© 2024 Bundl</p>
+          <p>Technologies Pvt. Ltd</p>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <p><a href="#">About</a></p>
+          <p><a href="#">Careers</a></p>
+          <p>Team</p>
+          <p>Swiggy One</p>
+          <p>Swiggy Instamart</p>
+          <p>Swiggy Genie</p>
+        </div>
+        <div>
+          <div>
+            <h2>Contact us</h2>
+            <p>Help & Support</p>
+            <p>Partner with us</p>
+            <p>Ride with us</p>
+          </div>
+          <div>
+            <h2>Legal</h2>
+            <p>Terms & Conditions</p>
+            <p>Cookie Policy</p>
+            <p>Privacy Policy</p>
+            <p>Investor Relations</p>
+          </div>
+        </div>
+        <div>
+          <h2>We deliver to:</h2>
+          <p><a href="">Bangalore</a></p>
+          <p><a href="">Gurgaon</a></p>
+          <p><a href="">Hyderabad</a></p>
+          <p><a href="">Delhi</a></p>
+          <p><a href="">Mumbai</a></p>
+          <p><a href="">Pune</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
