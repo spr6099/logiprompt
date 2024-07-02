@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+    <style></style>
+  </head>
+
+  <body>
+    <script>
+      let div = document.createElement("div");
+      div.id = "div ";
+
+      div.style.display = "flex";
+      div.style.justifyContent = "space-between";
+      div.style.height = "600px";
+
+      let btn = document.createElement("button");
+      //   btn.innerText = "submit";
+      btn.id = "btn";
+
+      let sun = document.createElement("img");
+      //   sun.src = "./img/sun.jpg";
+      sun.alt = "sun";
+      sun.height = 150;
+      // sun.style.marginLeft = "10px";
+      sun.style.borderRadius = "90px";
+      sun.id = "sunId";
+
+      let z = 0;
+      let a = 1200;
+      function Movesun() {
+        z += 10;
+        div.style.backgroundColor = "grey";
+        let v = document.getElementById("sunId");
+        v.src = "./img/sun.jpg";
+        v.style.marginRight = z + "px";
+        console.log(z);
+      }
+      let y = setInterval(Movesun, 100);
+
+      document.body.style.margin = "0";
+      console.log(div);
+      div.append(btn);
+      div.append(sun);
+      document.body.append(div);
+    </script>
+  </body>
+</html>

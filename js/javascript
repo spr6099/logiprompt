@@ -1,0 +1,55 @@
+(*) inline internal and external
+(*) <h1 onclick="alert('click me')">hellow world</h1>
+        inline js single couts and double couts issue
+(*) console.error(""); console.log("");
+(*) Difference btw var, let & const
+    (var = redeclare&reassign)
+    
+    (let = re assign only)
+    (const = no redeclare and re assign)
+
+(*) Data type
+    primitive &  (string,number,boolean,null,undefined)
+    non-primitive (function,array,object)
+(*) null & undefined
+(*) parseint & parse float, 
+(*)diff btw function & anonymous function & arrow function
+(*) Difference btw continue & break
+    The break statement terminates a while or for loop completely. The continue statement terminates execution 
+    of the statements within a while or for loop and continues the loop in the next iteration.
+(*)setInterval ,setTimeout,clearInterval & clearTimeout
+    (*)setInterval
+    The setInterval() method, offered on the Window and WorkerGlobalScope interfaces, 
+    repeatedly calls a function or executes a code snippet, with a fixed time delay between each call.
+
+        This method returns an interval ID which uniquely identifies the interval, 
+        so you can remove it later by calling clearInterval().
+    (*)setTimeout
+        The global setTimeout() method sets a timer which executes a function or specified piece
+         of code once the timer expires.
+    (*)clearInterval
+        The global clearInterval() method cancels a timed, repeating action which was previously established by a call 
+        to setInterval(). If the parameter provided does not identify a previously established action, this method does nothing.
+    (*)clearTimeout
+        The global clearTimeout() method cancels a timeout previously established by calling setTimeout().
+(*)event&eventHandler
+    (*)Events
+    onclick: Triggered when an element is clicked.
+    onmouseover: Fired when the mouse pointer moves over an element.
+    onmouseout: Occurs when the mouse pointer leaves an element.
+    onkeydown: Fired when a key is pressed down.
+    onkeyup: Fired when a key is released.
+    onchange: Triggered when the value of an input element changes.
+    onload: Occurs when a page has finished loading.
+    onsubmit: Fired when a form is submitted.
+    onfocus: Occurs when an element gets focus.
+    onblur: Fired when an element loses focus.
+
+(*)addEventListener()
+     element.addEventListener(event, listener, useCapture);
+    Parameters:
+    event: event can be any valid JavaScript event. Events are used without “on” prefixes like using
+        “click” instead of “onclick” or “mousedown” instead of “onmousedown”.
+    listener(handler function): It can be a JavaScript function that responds to the event occurring.
+    useCapture: It is an optional parameter used to control event propagation. A boolean value
+        is passed where “true” denotes the capturing phase and “false” denotes the bubbling phase.

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+    <style></style>
+  </head>
+
+  <body>
+    <script>
+      let div = document.createElement("div");
+      div.id = "div ";
+      div.style.height = "600px";
+      div.style.backgroundColor = "black";
+
+
+      let btn = document.createElement("button");
+      btn.innerText = "submit";
+      btn.id = "btn";
+
+      let moon = document.createElement("img");
+      moon.height = 150;
+      moon.style.borderRadius = "90px";
+      moon.id = "moonId";
+      btn.addEventListener("click", mm);
+
+      function mm() {
+        let y = setInterval(Moon, 100);
+        let z = 0;
+        let a = 1040;
+        let b = 0;
+
+        function Moon() {
+          if (z <= a) {
+            z += 30;
+            let x = document.getElementById("moonId");
+            x.src = "./img/moon.jpg";
+            x.style.marginLeft = z + "px";
+            console.log("ma", a);
+            console.log("mz", z);
+          } else if (a >= 250) {
+            a -= 30;
+            div.style.backgroundColor = "grey";
+            let x = document.getElementById("moonId");
+            x.src = "./img/sun.jpg";
+            x.style.marginLeft = a + "px";
+            console.log("a", a);
+            console.log("z", z);
+          } else {
+            clearInterval(y);
+          }
+        }
+      }
+      document.body.style.margin = "0";
+      console.log(div);
+      div.append(btn);
+      div.append(moon);
+      document.body.append(div);
+    </script>
+  </body>
+</html>

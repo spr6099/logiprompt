@@ -1,0 +1,36 @@
+ npm init -y   
+ npm install mongodb
+    1 = ascending
+   -1 = descending
+   
+ database.collection('data1').find({},{projection:{_id:0,name:1}}).toArray().then((result)=>{
+        console.log(result);
+    }).catch((error)=>console.log(err));
+
+ database.collection('data1').find().sort({name:-1}).toArray().then((result)=>{
+        console.log(result);
+    })
+
+database.collection('data1').updateOne({no:90},{$set:{no:89}}).then((result)=>{
+        console.log(result);
+    })
+
+files insert into express
+-------------------------------
+    let path = require('path')
+
+    app.get('/paragraph',(req,res)=>{
+    res.sendFile(path.join(__dirname,'para.html'))
+        })
+
+static
+-------------
+
+    app.use(express.static('img'))
+
+params
+-----------
+app.get('/about/:aboutid',(req,res)=>{
+    // res.send("hello express about")
+    res.send(req.params)
+})

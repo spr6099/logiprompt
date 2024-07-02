@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let div = document.createElement("div");
+      div.style.display = "flex";
+      div.style.justifyContent = "space-between";
+      let img1 = document.createElement("img");
+      img1.id = "image1";
+      img1.alt = "image";
+      img1.src = "./img/car3.jpg";
+      img1.height = "150";
+      let img2 = document.createElement("img");
+      img2.id = "image2";
+      img2.alt = "image";
+      img2.src = "./img/car1.jpg";
+      img2.height = "150";
+
+      let x = 0;
+      let y = 5;
+      function image() {
+        x += y;
+        let a = document.getElementById("image1");
+        a.style.paddingLeft = parseInt(x) + "px";
+        let b = document.getElementById("image2");
+        b.style.paddingRight = parseInt(x) +  "px";
+        if(x>=400){
+          clearInterval(q)
+          alert("acident")
+        }
+        console.log(x);
+      }
+
+      let q=setInterval(image, 10);
+
+      div.append(img1);
+      div.append(img2);
+      document.body.append(div);
+      console.log(div);
+    </script>
+  </body>
+</html>
+

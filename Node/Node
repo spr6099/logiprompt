@@ -1,0 +1,67 @@
+(*)what is node
+As an asynchronous event-driven JavaScript runtime, Node.js is designed 
+            to build scalable network applications.  
+        
+(*) HTTP in node js
+Node.js has a built-in module called HTTP, which allows Node.js to transfer data over the Hyper Text Transfer Protocol (HTTP).
+To include the HTTP module, use the require()
+
+(*) Create Server
+--------------------
+The HTTP module can create an HTTP server that listens to server ports and gives a response back to the client.
+Use the createServer() method to create an HTTP server:
+
+var http = require('http');
+
+(*) HTTP Header
+----------------
+If the response from the HTTP server is supposed to be displayed as HTML, you should include an HTTP header with the correct content type:
+The first argument of the res.writeHead() method is the status code, 200 means that all is OK, the second argument is an object containing the response headers.
+
+(*)  File System
+-------------------
+To handle file operations like creating, reading, deleting, etc., Node.js provides an inbuilt module called FS (File System).
+
+Common use for File System modules:
+------------------------------------
+Read Files
+Write Files
+Append Files
+Close Files
+Delete Files
+
+
+(*) Path Module
+-----------------
+console.log(__dirname);
+console.log(__filename);
+console.log(path.basename(__filename));
+console.log(path.extname(__filename));
+console.log(path.parse(__filename));
+console.log(path.join(__dirname,'main',"join.html"));
+
+(*)Local Modules
+----------------
+exports.Division=(a,b)=> {
+  console.log("Division", a / b);
+}
+
+(*) Difference btw Buffer and strem
+---------------------------------------
+
+        SQL
+-------------------------
+
+(*) Difference btw varchar and char
+-------------------------------------
+(*)Difference btw truncate and delete
+-------------------------------------
+
+(*) Types of Joins in MySQL
+-------------------------------------
+INNER JOIN: Returns records that have matching values in both tables
+LEFT JOIN: Returns all records from the left table, and the matched records from the right table
+RIGHT JOIN: Returns all records from the right table, and the matched records from the left table
+
+(*) cross join and self Join
+------------------------------------

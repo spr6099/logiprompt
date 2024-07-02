@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+    <style></style>
+  </head>
+
+  <body>
+    <script>
+      let div = document.createElement("div");
+      div.id = "div ";
+      div.style.backgroundColor = "black";
+      div.style.height = "600px";
+
+      let btn = document.createElement("button");
+      btn.innerText = "submit";
+      btn.id = "btn";
+      // btn.type = "submit";
+
+      let moon = document.createElement("img");
+      moon.src = "./img/moon.jpg";
+      moon.alt = "moon";
+      moon.height = 150;
+      // moon.style.marginLeft = "10px";
+      moon.style.borderRadius = "90px";
+      moon.id = "moonId";
+
+      let z = 0;
+      let a = 1000;
+
+      function MoveMoon() {
+        z += 60;
+        let x = document.getElementById("moonId");
+        x.style.marginLeft = z + "px";
+        console.log(z);
+        if (z == a) {
+          clearInterval(y)
+      } else{
+        console.log("hel");
+      }
+    }
+      let y = setInterval(MoveMoon, 100);
+
+      document.body.style.margin = "0";
+      console.log(div);
+      div.append(btn);
+      div.append(moon);
+      document.body.append(div);
+    </script>
+  </body>
+</html>

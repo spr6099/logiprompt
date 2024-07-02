@@ -1,0 +1,97 @@
+https://getbootstrap.com/docs/5.3/getting-started/download/
+download and extract css& js
+
+<link rel="stylesheet" href="css/bootstrap.css" />
+
+copy script src cdn first line & paste beore script src
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+
+
+(*)What is bootstrap?
+Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. Designed to enable responsive development
+Bootstrap provides a collection of syntax for template designs.
+Bootstrap 5 is the newest version of Bootstrap
+
+-----input
+<input type="text"  class="form-control" />
+-----input border size & color
+<input type="text" class=" border-3 border-success||border-dark||border-primary " />
+------Text
+    <div class="fs-1 fw-bold text-capitalize text-decoration-line-through">sandeep</div>
+     fs => font size (1 to 6)
+     fw=> font weight (bold,bolder,normal,light,italic)
+     fst=> font style()
+     text-capitalize||uppercase||lowercase
+     w-25||50||75||100  => width
+     p  => padding
+
+-----Wrap
+    text-wrap(Wrap text with) & text-nowrap (This text should overflow the parent)
+
+-----heading alignment 
+<h3 class="text-start|| text-center|| text-end ">
+-----heading color 
+<h3 class=" text-primary|| text-secondary|| text-danger">
+
+
+-----radio& checkbox
+<input type="radio" class="form-check-input"/>
+<input type="checkbox" class="form-check-input " />
+------select
+<select name="district" class="form-select ">
+-----file
+<input type="file" class="form-control "/>
+
+
+-----------Button
+----Button color
+<button class="btn btn-primary    btn-success    btn-danger">
+----button outline
+<button class="btn btn-outline-primary  btn-outline-danger ">
+-----button size 
+    .btn-lg or .btn-sm
+
+
+
+-------Border
+<div class=" border||border-bottom border-5  border-danger" >
+
+------noWrap
+<p class="text-nowrap">
+
+
+-----Grid
+bootstrap grid system allows upto 12 columns across the page (= one row)
+ <div class="row">
+        <div class="col-3"> <img src="./img/tiger.jpg"/></div>
+        <div class="col-3"><p> Lorem ipsum dol</p></div>
+      </div>
+
+----BreakPoints
+it is responsive
+responssively arrange HTML elements depending the screen size 
+xtra small      xs    for phones
+small	          sm	  for tablets
+medium	        md    small laptops
+large	          lg	  laptop & desktops
+extra large	    xl	  
+xtra xtra large	xxl   
+
+<div class="text-lg-start text-sm-center text-xl-end">
+<div class="col-lg-4 col-sm-12">
+
+fontawsome
+fontawsome cdn--> fontawsome icon
+
+(*) class container & container fluid difference
+
+
+
+
+
+
+
+
+

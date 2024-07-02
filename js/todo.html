@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let div = document.createElement("div");
+      div.style.height = "500px";
+      div.style.width = "50%";
+      div.style.margin = "auto";
+      div.style.paddingLeft = "40px";
+      div.style.backgroundColor = "grey";
+
+      let h2 = document.createElement("h2");
+      h2.innerHTML = " TODO";
+      h2.style.paddingLeft = "550px";
+
+      
+      let label = document.createElement("label");
+      label.innerHTML = "Enter Your Todo";
+      label.htmlFor = "todoInput";
+
+      let input = document.createElement("input");
+      input.style.width = "50%";
+      input.style.height = "30px";
+      input.style.margin = "20px";
+      input.style.marginLeft = "150px";
+      input.id = "todoInput";
+
+
+      let table = document.createElement("table");
+      let row = document.createElement("tr");
+      let td1 = document.createElement("td");
+      let row1 = document.createElement("tr");
+      let td2 = document.createElement("td");
+
+
+      td1.innerHTML = "buying milk";
+      td2.innerHTML = "buying vegetable";
+      div.append(label);
+      div.append(input);
+
+
+      div.append(table);
+      table.appendChild(row);
+      table.appendChild(row1);
+      row.appendChild(td1);
+      row1.appendChild(td2);
+      document.body.append(h2);
+      document.body.append(div);
+      console.log(div);
+
+      // console.log(label);
+    </script>
+  </body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Input</title>
+    <style>
+      /* Add some basic styling for better visualization */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      #todoContainer {
+        height: 500px;
+        width: 50%;
+        margin: auto;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      #todoInput {
+        width: 50%;
+        height: 30px;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="todoContainer">
+      <label for="todoInput">Enter Your Todo</label>
+      <input type="text" id="todoInput" />
+    </div>
+    <script>
+      console.log(document.getElementById("todoContainer"));
+      console.log(document.getElementById("todoInput"));
+    </script>
+  </body>
+</html> -->

@@ -1,0 +1,68 @@
+<!-- ***************************** -->
+<!-- 
+    <h1 id="head">hii js</h1>
+    <h4 class="hii">Hii class</h4>
+    <h4 class="hii">hii class</h4>
+    <h5 class="hii">Hii h5</h5>
+
+      document.getElementById("head").innerHTML = "hello dom";
+
+      // document.getElementsByClassName('hii')[1].style.color="blue"
+      console.log(document.getElementsByClassName("hii"));
+
+      const y = document.getElementsByClassName("hii");
+      for (let i = 0; i <= y.length; i++) {
+        y[i].style.color = "blue";
+      } -->
+
+<!-- ****************************************** -->
+<!-- <body>
+    <h1 class="h1"></h1>
+    <h1 class="h1"></h1>
+    <h1 class="h1"></h1> -->
+<!-- <h2 class="h1"></h2>
+
+    <img id="im" src="./img/download.jpg">
+    <h3 class="head">Heelo</h3>
+
+    <p class="example">I am a paragraph.</p>
+<p class="example">I am a paragraph.</p>  -->
+
+<!-- <script> -->
+<!-- 
+       const t = document.getElementsByClassName("h1");
+      for (i = 0; i <= t.length; i++) {
+       t[i].innerHTML = "hiii";
+      }
+     document.querySelector('#im').style.border="2px solid black";
+    document.querySelector(".head").style.backgroundColor="red"
+      document.querySelector("#im").style.border="2px solid black" -->
+<!-- </script> -->
+
+<!-- ************************************* -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="./img/img.jpg" class="flower" alt="" height="250px" />
+    <h1 class="h">h1</h1>
+    <h2 class="h">h2</h2>
+    <h3 class="h">h3</h3>
+    <h4 class="h">h4</h4>
+    <script>
+      document.querySelector(".flower").style.border = "5px solid grey";
+      // document.querySelector(".flower")
+      document.querySelector(".flower").style.borderRadius = "20px";
+      const f = document.querySelectorAll(".h");
+      console.log(f);
+      for (let i = 0; i <= f.length; i++) {
+        f[i].innerHTML = "white";
+        f[i].style.backgroundColor = "red";
+      }
+    </script>
+  </body>
+</html>

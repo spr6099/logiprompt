@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   1.Write a script that calculates the sum of all numbers from 1 to 100 and prints the result.
+      let x = 0;
+      for (i = 0; i <= 100; i++) {
+        x = x + i;
+      }
+      document.write(x, "<br>");
+
+      //   2.Write a script that prints the multiplication table for a given number (e.g., 5).
+      let a = 6;
+      let s = 0;
+      for (i = 1; i <= 10; i++) {
+        s = i * a;
+        document.write(i, "  ", "x ", a, "  =", s, "<br>");
+      }
+
+      //   3.Write a script that calculates the factorial of a given number (e.g., 5) and prints the result.
+
+      document.write("Factorial", "=");
+
+      let f = 5;
+      let y = 1;
+      for (i = 1; i <= f; i++) {
+        y = y * i;
+      }
+      document.write(y, "<br>");
+
+      //   4.Write a script that iterates through an array of names and prints each name.
+      let arr = ["Alice", "Bob", "Charlie", "David", "Angel"];
+      for (i = 0; i <= arr.length; i++) {
+        document.write(arr[i], "<br>");
+      }
+      document.write("<br>");
+
+      //    5.Write a script that takes a number between 1 and 7 and prints the corresponding day of
+      //     the week using a switch statement.Assume 1 is Monday and 7 is Sunday
+      let w = 7;
+      switch (w) {
+        case 1:
+          document.write("Monday");
+          break;
+        case 2:
+          document.write("tuesday");
+          break;
+        case 3:
+          document.write("wednesday");
+          break;
+        case 4:
+          document.write("Thursday");
+          break;
+        case 5:
+          document.write("Friday");
+          break;
+        case 6:
+          document.write("Saturday");
+          break;
+        case 7:
+          document.write("Sunday");
+          break;
+        default:
+          document.write("Invalid");
+      }
+      // Nested Loop
+      document.write("<br>", "<br>", "Triangle", "<br>");
+
+      let z;
+      let v;
+      let u = 15;
+      let k;
+      for (let i = 0; i < u; i++) {
+        document.write("<br>");
+        for (let j = u - i; j <= u; j++) {
+          document.write("*");
+        }
+      }
+
+      document.write("<br>", "<br>", "Square", "<br>");
+
+      for (let i = 0; i < u; i++) {
+        document.write("<br>");
+        for (let j = 0; j <= u; j++) {
+          document.write("*");
+        }
+      }
+
+      document.write("<br>", "<br>", "Triangle", "<br>");
+
+      for (let i = 0; i < u; i++) {
+        document.write("<br>");
+        for (let j = u - i; j <= u; j++) {
+          document.write("*");
+        }
+      }
+      
+    </script>
+  </body>
+</html>

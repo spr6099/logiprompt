@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 class="head">Hello querty</h3>
+    <img src="./img/flower.jpg" width="200" height="200" class="im" />
+    <img src="./img/flower.jpg" width="200" height="200" class="im" />
+    <img src="./img/flower.jpg" width="200" height="200" class="im" />
+
+    <script>
+      document.querySelector(".head").style.backgroundColor = "yellow";
+      // document.querySelector("#im").style.borderRadius="20px"
+      let y = document.querySelectorAll(".im");
+      for (let i = 0; i <= y.length; i++) {
+        y[i].style.borderRadius = "20px";
+      }
+    </script>
+  </body>
+</html>

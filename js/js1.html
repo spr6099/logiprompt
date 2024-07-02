@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="color: #947575">hellow world</h1>
+    <h1 onclick='alert("click me")'>hellow world</h1>
+    <script>
+      // redeclare and re- assign (var,let,const)
+      //   var
+      var a = 10;
+      var a = 28;
+      a = 9;
+      //   let
+      let b = 25;
+      b = 56; // re-assign only
+      //   const
+      const c = 90;
+
+      //   document.write(c + "<br>")
+
+      let str = "logiprompt ";
+      let hii = "academy";
+      let str3 = "method of Array instances is used to ";
+
+      document.write(typeof str + "<br>");
+      document.write(str.length + "<br>");
+      document.write(str.toLocaleUpperCase() + "<br>");
+      document.write(str.concat(" " + hii) + "<br>");
+
+      //   The concat() method of Array instances is used to merge two or more arrays.
+      //    This method does not change the existing arrays, but instead returns a new array.
+
+      document.write(str3.split("") + "<br>"); //("") each word splitting
+      document.write(str3.split(" ") + "<br>"); // (" ") each words splitting
+
+      document.write(str.split("").sort() + "<br>");
+      //   The default sort order is ascending, built upon converting the elements into strings,
+      //   then comparing their sequences of UTF-16 code units values.
+
+      document.write(str.split("").join("-") + "<br>");
+      document.write(str.split("").reverse().join("-") + "<br>");
+
+      // The join() method of Array instances creates and returns a new string by concatenating all of the elements in this array, separated by commas or a specified separator string.
+      // If the array has only one item, then that item will be returned without using the separator.
+    </script>
+  </body>
+</html>

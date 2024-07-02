@@ -1,0 +1,76 @@
+<!-- 
+  <body>
+    <h1 id="head" onclick="fun()">Click event</h1>
+    <button>Click</button>
+    <script>
+      const y = document.createElement("input");
+      y.value = "hii";
+      document.body.appendChild(y);
+
+      function fun() {
+        document.getElementById("head").innerHTML="hel"
+      } -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="divv"></div>
+    <button id="btn" onclick="click()"> submit </button>
+
+
+    <script>
+      const div = document.createElement("div");
+      var img = document.createElement("img");
+      // img.setAttribute("src", "img.jpg");
+      img.id = "imgId";
+      img.src = "img.jpg";
+      img.width = 200;
+      img.height = 200;
+      document.getElementById("divv").appendChild(img);
+
+      //   var btn = document.createElement("button");
+      //   btn.value="submit";
+
+      function click() {
+        document.getElementById('divv').img.src = "flower.jpg";
+        // img.src = "flower.jpg";
+      }
+    </script>
+    
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+    <div id="divv">
+        <button id="btn" onclick="clickImage()">Submit</button>
+    </div>
+
+
+  
+  <script>
+    const div = document.createElement("div");
+    var img = document.createElement("img");
+    img.id = "imgId";
+    img.src = "img.jpg";
+    img.width = 200;
+    img.height = 200;
+    document.getElementById("divv").appendChild(img);
+
+    function clickImage() {
+      document.getElementById('imgId').src = "flower.jpg";
+    }
+  </script>
+</body>
+</html>

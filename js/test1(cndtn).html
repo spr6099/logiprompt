@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Age
+      let age = 19;
+      if (age <= 13) {
+        document.write(" Child");
+      } else if (age >= 14 && age <= 19) {
+        document.write("Teenager");
+      } else if (age >= 20) {
+        document.write("Adult");
+      } else {
+        document.write("invalid age");
+      }
+      document.write("<br>");
+
+      // score
+      let score = 50;
+      if (score < 50) {
+        document.write(" Fail");
+      } else if (score >= 50 && score <= 75) {
+        document.write("Pass");
+      } else if (score >= 75) {
+        document.write("Pass");
+      } else {
+        document.write("invalid Score");
+      }
+      document.write("<br>");
+
+      //   Time
+      let time = 2;
+      if (time >= 5 && time <= 11) {
+        document.write(" Good Morning");
+      } else if (time >= 12 && time <= 17) {
+        document.write("Good AfterNoon");
+      } else if (time >= 18 && time <= 21) {
+        document.write("Good Evening");
+      } else if (time >= 22 || time <= 4) {
+        document.write("Good Night");
+      } else {
+        document.write("Invalid");
+      }
+      document.write("<br>");
+
+      // Temperature
+      let temp = 26;
+      if (temp == 0) {
+        document.write(" Freezing");
+      } else if (temp > 0 && temp <= 15) {
+        document.write("Cold");
+      } else if (temp >= 16 && temp <= 25) {
+        document.write("Warm");
+      } else if (temp > 25) {
+        document.write("Hot");
+      } else {
+        document.write("invalid Temp");
+      }
+      document.write("<br>");
+
+      // Odd or Even
+      //   The remainder operator % gives the remainder when used with a number.
+      let no = 3;
+      if (no % 2 == 0) {
+        document.write(" The no. is Even");
+      } else if (no % 2 != 0) {
+        document.write("The no. is Odd");
+      } else {
+        document.write("invalid Number");
+      }
+      document.write("<br>");
+
+      // Traffic Light
+      let light = "red";
+      if (light =="red") {
+        document.write(" Stop");
+      } else if (light == "yellow") {
+        document.write("Ready");
+      }  else if (light == "green") {
+        document.write("Go");
+      } else {
+        document.write("invalid Light");
+      }
+      document.write("<br>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let d = document.createElement("div");
+      d.id = "para";
+      console.log(d);
+
+      function start() {
+        document.getElementById("para").innerText =
+          new Date().toLocaleTimeString();
+      }
+      let a = setInterval(start, 1000);
+      document.body.append(d);
+    </script>
+  </body>
+</html>

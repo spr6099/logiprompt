@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <script>
+      let div = document.createElement("div");
+      let p = document.createElement("p");
+      let textt =
+        "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+
+      p.innerText = textt;
+      p.id = "pid";
+
+      let btn = document.createElement("button");
+      let btn2 = document.createElement("button");
+
+      btn.innerText = "Hide";
+      btn2.innerText = "Show";
+
+      function hide() {
+        document.getElementById("pid").style.visibility = "hidden";
+        // document.getElementById("pid").innerText = " ";
+      }
+      function show() {
+        document.getElementById("pid").style.visibility = "visible";
+        // document.getElementById("pid").innerText = textt;
+      }
+
+      btn.addEventListener("click", hide);
+      btn2.addEventListener("click", show);
+
+      div.appendChild(btn2);
+      div.append(btn);
+      div.append(p);
+      document.body.appendChild(div);
+      console.log(div);
+    </script>
+  </body>
+</html>

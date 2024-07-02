@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .divId {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid green;
+      }
+      #h2 {
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let divv = document.createElement("div");
+      divv.className = "divId";
+      divv.id = "divId";
+      //    document.querySelector(".divId").style.border = "1px solid green";
+    //   let a = document.getElementById(".divId");
+    //   a.style.backgroundColor = "red";
+
+      let h1 = document.createElement("h4");
+      h1.id = "h1";
+      h1.innerHTML = "Hellow";
+
+      let h2 = document.createElement("h4");
+      h2.id = "h2";
+      h2.innerHTML = "world";
+      function start() {
+        h1.innerHTML += "hellow";
+      }
+      let x = setInterval(start, 1000);
+
+      function start2() {
+        h2.innerHTML += "world";
+        // document.querySelector("#h2").padding-left="100"
+      }
+      //   let t = setInterval(start2, 1000);
+      let y = setInterval(start2, 1000);
+      function stop() {
+        clearInterval(x);
+        clearInterval(y);
+      }
+      setTimeout(stop, 14000);
+      //   clearInterval(,3000)
+      divv.append(h1);
+      divv.appendChild(h2);
+      console.log(divv);
+      document.body.appendChild(divv);
+    </script>
+  </body>
+</html>

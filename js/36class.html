@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // OOPS
+      //   class Person {
+      //     name = "arun";
+      //     age = 7;
+      //     fun = () => {
+      //       document.write("hellow");
+      //     };
+      //   }
+      //   let x = new Person();
+      //   document.write(x.age);
+      //   x.fun()
+
+      //   Constructor
+
+      //   class Student {
+      //     constructor(name, age) {
+      //       this.x = name;
+      //       this.y = age;
+      //     }
+      //   }
+      //   let stud = new Student("Arun", 5);
+      //   document.write(stud.x,stud.y)
+      // 3rd step
+      //   class Teacher {
+      //     constructor(b) {
+      //       this.subject = b;
+      //     }
+      //     teaching = () => {
+      //       document.write(` i am teaching ${this.subject}`);
+      //     };
+      //   }
+
+      //   class Student extends Teacher {
+      //     constructor(a, b) {
+      //       super(b);
+      //       this.student = a;
+      //     }
+      //   }
+      //   const stud = new Student("arun", "chemistry");
+      //   document.write(stud.student + " " + stud.subject);
+      //   stud.teaching();
+
+      function time() {
+        document.write(new Date().toLocaleTimeString() + "<br>");
+      }
+      let x = setInterval(time, 2000);
+
+      //   console.log(d);
+      //   window.location.reload();
+     
+    </script>
+  </body>
+</html>

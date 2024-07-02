@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var div = document.createElement("div");
+      var img = document.createElement("img");
+      img.id = "imgId";
+      img.height = 200;
+      img.alt = "image";
+      img.src = "flower.jpg";
+      console.log(div);
+
+      var btn = document.createElement("button");
+      btn.innerText = "Day";
+      var btn2 = document.createElement("button");
+      btn2.innerText = "Night";
+      var btn3 = document.createElement("button");
+      btn3.innerText = "Reset";
+
+      function day() {
+        document.getElementById("imgId").src = "morning.jpg";
+      }
+      btn.addEventListener("click", day);
+
+      function night() {
+        document.getElementById("imgId").src = "night.jpg";
+      }
+      function reset() {
+        document.getElementById("imgId").src = "flower.jpg";
+      }
+
+      btn.addEventListener("click", day);
+      btn2.addEventListener("click", night);
+      btn3.addEventListener("click", reset);
+
+
+      div.append(btn3);
+      div.append(btn2);
+      div.appendChild(btn);
+      div.append(img);
+      document.body.appendChild(div);
+
+
+        
+    </script>
+  </body>
+</html>

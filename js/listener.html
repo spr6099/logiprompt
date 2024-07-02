@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="head"></h1>
+    <button id="btn">Click</button>
+    <br />
+    <h3 id="heads">Hover</h3>
+    <button onclick="stopp()">Stop</button>
+    <script>
+      document.getElementById("btn").addEventListener("click", function () {
+        document.getElementById("head").innerHTML = "hello listener";
+      });
+
+      // const start= document.getElementById('heads')
+      // start.addEventListener("mouseover",funStart)
+
+      // function funStart(){
+      //     document.getElementById('heads').innerHTML+='hovering'
+      // }
+
+      // function funStop(){
+      //     start.removeEventListener('mouseover',funStart)
+      // }
+
+      function hover() {
+        document.getElementById("heads").innerHTML += "helloww";
+      }
+      const hoverStart = document.getElementById("heads");
+      hoverStart.addEventListener("mouseover", hover);
+
+      function stopp() {
+        hoverStart.removeEventListener("mouseover", hover);
+      }
+
+      
+    </script>
+  </body>
+</html>
