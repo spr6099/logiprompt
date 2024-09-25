@@ -1,0 +1,14 @@
+<h2>Edit</h2>
+<form action="" method="post" enctype="multipart/form-data">
+    <label for="id">Doctor Id:</label><br>
+    <input type="text" id="id" name="doctorId" value="{{editData.docId}}"><br>
+    <label for="name">Doctor name:</label><br>
+    <input type="text" id="name" name="doctorName" value="{{editData.docName}}"><br><br>
+    Doctor Image:<br>
+    <input type="image" src="/images/{{editData.docImage}}" alt="" height="100px" width="" value="{{editData.docImage}}"> <br> <br>
+    {{!-- <img src="/images/{{editData.docImage}}" alt="" height="100px" ><br><br> --}}
+
+    <input type="file" name="image"><br>
+
+    <input type="submit" value="Submit">
+</form>

@@ -1,0 +1,30 @@
+<h2>doctor</h2>
+<form action="" method="post" enctype="multipart/form-data">
+    Doctor Id:<br>
+    <input type="text" id="id" name="doctorId"><br>
+    Doctor name:<br>
+    <input type="text" id="name" name="doctorName"><br>
+    Doctor Image:<br>
+    <input type="file" name="image"><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<table>
+
+    <tr>
+        <th>DoctorId</th>
+        <th>DocName</th>
+        <th>DocImage</th>
+    </tr>
+    {{#each docData}}
+    <tr>
+        <td>{{this.docId}}</td>
+        <td>{{this.docName}}</td>
+        <td> <img src="/images/{{this.docImage}}" alt="image" width="100px" height="100px"></td>
+        </td>
+        <td><a href="doctor/edit/{{this._id}}"><button>Edit</button></a></td>
+        <td><a href="doctor/delete/{{this._id}}"><button>Delete</button></a></td>
+    </tr>
+    {{/each}}
+</table>

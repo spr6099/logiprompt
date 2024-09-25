@@ -1,0 +1,30 @@
+<form action="" method="post">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    Email:<br>
+    <input type="email" name="email"><br>
+    Ph no.<br>
+    <input type="text" name="phno"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<table>
+    <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>PhoneNo.</th>
+    </tr>
+    {{#each formdata}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.lname}}</td>
+        <td>{{this.email}}</td>
+        <td>{{this.phNo}}</td>
+        <td><a href="/delete/{{this._id}}"><button>X</button></a></td>
+        <td><a href="/edit/{{this._id}}"><button>Edit</button></a></td>
+    </tr>
+    {{/each}}
+</table>

@@ -1,0 +1,33 @@
+<h2>Department</h2>
+
+<form action="" method="post">
+  Department :<br>
+  <input type="text" name="department"><br>
+  Job:<br>
+  <input type="text" name="job"><br>
+  Applicant Name:<br>
+  <select name="applicantName" id="">
+    <option>Select</option>
+    {{#each resl}}
+    <option value="{{this._id}}">{{this.firstname}}</option>
+
+    {{/each}}
+  </select>
+  <input type="submit" value="Submit">
+</form>
+
+<table>
+  <tr>
+    <th>department</th>
+    <th>job</th>
+    <th>name</th>
+  </tr>
+  {{#each departDetails}}
+  <tr>
+    <td>{{this.department}}</td>
+    <td>{{this.job}}</td>
+    <td>{{this.newForm.firstname}}</td>
+    
+  </tr>
+  {{/each}}
+</table>

@@ -1,0 +1,45 @@
+(\*)Use State
+useState is a React Hook that lets you add a state variable to your component.
+
+(\*) Use Effect
+The useEffect hook is used to perform side effects in your functional components, such as
+fetching data, subscribing to external events, or manually changing the DOM. It combines the
+functionality of componentDidMount , componentDidUpdate , and componentWillUnmount in class
+components.
+
+useEffect is one of the most important hooks in react and is a way to handle life cycle of the
+component in which it is present. useEffect runs on every render of the
+component (i.e when a state variable changes) and can also run every time a specific value changes
+that is mentioned in it's dependency array
+
+(\*)UseRef
+The main use of useRef hook is to access the DOM elements in a more efficient way as compared to
+simple refs. Since useRef hooks preserve value across various re-renders and do not cause
+re-renders whenever a value is changed they make the application faster and helps in caching and
+storing previous values
+
+(\*) Fetch
+The Fetch API provides a fetch() method defined on the window object. It also provides a JavaScript
+interface for accessing and manipulating parts of the HTTP pipeline (requests and responses). The
+fetch method has one mandatory argument- the URL of the resource to be fetched. This method
+returns a Promise that can be used to retrieve the response to the request.
+
+(\*)Axios  
+Axios is a Javascript library used to make HTTP requests from node.js or XMLHttpRequests from the
+browser and it supports the Promise API that is native to JS ES6. It can be used intercept HTTP
+requests and responses and enables client-side protection against XSRF. It also has the ability to
+cancel requests.
+
+(\*)Axios and Fetch
+https://www.geeksforgeeks.org/difference-between-fetch-and-axios-js-for-making-http-requests/
+
+(\*) Cors
+In ReactJS, Cross-Origin Resource Sharing or CORS requests refers to the method that allows you to make requests to the server deployed at a different domain. As a reference, if the frontend and backend are at two different domains, we need CORS there.
+
+(\*) onSubmit Event
+React onSubmit is an event handler that triggers when a form is submitted. It is one of the form events that sends the input data to the (handleSubmit) function to utilize that information.
+
+(\*)static middeleare
+app.use(express.static('image'))
+
+

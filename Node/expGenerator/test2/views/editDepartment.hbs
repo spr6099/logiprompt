@@ -1,0 +1,28 @@
+<form action="" method="post">
+    <h2>Edit Department</h2>
+    Department<br>
+    <input type="text" name="department" value="{{department.department}}"><br>
+    Job<br>
+    <input type="text" name="job" value="{{department.job}}"><br>
+    Applicant name<br>
+    <select name="applicantName" id="depart">
+        {{#each forms}}
+        <option value="{{this._id}}">{{this.name}}</option>
+        {{/each}}
+    </select> <br>
+    <input type="hidden" value="{{department.applicantName}}" id="hide">
+    <input type="submit" value="update">
+</form>
+
+<script>
+    let departselect = document.getElementById('depart');
+    let hides = document.getElementById('hide').value;
+
+    for(let i = 0; i < departselect.options.length; i++) {
+        let opt = departselect.options[i];
+        if(opt.value == hides) {
+            opt.selected = true;
+            break;
+        }
+    }
+</script>

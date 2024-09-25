@@ -1,0 +1,37 @@
+<form action="" method="post">
+  <div class=>
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email"> <br>
+
+    <label for="psw"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name"> <br>
+
+    <label for="psw-repeat"><b>district</b></label>
+    <input type="text" placeholder="Enter District" name="district"> <br>
+    <hr>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+</form>
+
+<table>
+  <tr>
+    <th>email</th>
+    <th>name</th>
+    <th>district</th>
+  </tr>
+  {{#each resl}}
+  <tr>
+    <td>{{this.email}} </td>
+    <td>{{this.name}}</td>
+    <td>{{this.district}}</td>
+    <td><a href="form/{{this._id}}"><button>Delete</button></a></td>
+    <td><a href="edit/{{this._id}}"> <button>Edit</button></a></td>
+  </tr>
+  {{/each}}
+</table>
